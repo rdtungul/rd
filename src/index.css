@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Image Hover Effects */
+.image-hover-effects {
+  @apply transition-all duration-200 hover:-translate-y-1 hover:bg-opacity-30 hover:shadow-lg;
+}
+.image-zoom-effects {
+  @apply object-cover transition duration-500 cursor-pointer hover:scale-105 hover:shadow-lg;
+}
+/* ==== ITEM CONTAINER */
+.item {
+  @apply relative overflow-hidden;
+}
+.item-gradient {
+  @apply absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b from-transparent to-gray-300 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-10;
+}

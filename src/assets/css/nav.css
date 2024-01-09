@@ -1,0 +1,7 @@
+/* Mobile Menu Container Styling */
+.mobile-menu-toggle {
+  @apply w-full py-3 text-center hover:text-gray-500;
+}
+.nav-hover-effect {
+  @apply hover:bg-gradient-to-r from-orange-500 via-red-500 to-indigo-500 bg-clip-text text-base tracking-widest px-2 text-black hover:text-transparent duration-200;
+}

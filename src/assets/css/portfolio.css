@@ -1,0 +1,12 @@
+.portfolio-heading-effect {
+  @apply bg-gradient-to-r from-orange-200 via-red-400 to-indigo-500 bg-clip-text tracking-widest px-2 text-black text-transparent duration-200 !important;
+}
+
+.text-transition > div {
+  @apply bg-gradient-to-r to-indigo-400 from-red-300 via-red-400 bg-clip-text tracking-widest px-2 text-black text-transparent duration-200 !important;
+}
+
+/* textSwitcher text */
+.text-transition > div {
+  height: 114px;
+}

@@ -1,0 +1,66 @@
+body {
+  font-family: "Satoshi", sans-serif;
+  background-image: url("../src/assets/img/main-bg.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gotu", sans-serif;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: #413f42;
+  transform: rotate(0);
+  transition: all 0.5s;
+  border-radius: 100px;
+}
+.hamburger-middle {
+  transform: translateY(7px);
+}
+.hamburger-bottom {
+  transform: translateY(14px);
+  background: #413f42;
+}
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+  position: fixed;
+  top: 25px;
+  right: 25px;
+}
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+  background-color: #413f42;
+  border-radius: 100px;
+}
+.open .hamburger-middle {
+  display: none;
+  border-radius: 100px;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  background-color: #413f42;
+  border-radius: 100px;
+}
